@@ -1,0 +1,124 @@
+* {
+    font-family: "Roboto Mono";
+}
+hr {
+    border-top: 1px solid #021526;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #0C2840;
+}
+
+.duplicate{
+  margin-bottom:40px;
+}
+
+.contact-list {
+    padding: 10px;
+    display: inline-block;
+}
+.contact-list > li {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+.contact-header {
+    width: auto;
+    float: none;
+    color: #1C2F40;
+    font-weight: bold;
+}
+.profileImg {
+    padding: 10px;
+    border: 1px solid #284259;
+}
+.quote {
+    float: right;
+    width: 100%;
+}
+.who {
+    float: right;
+    font-weight: lighter;
+    font-style: italic;
+}
+.skill-list {
+    display: flex;
+}
+.skill-list > li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+    background-color: #284259;
+    color: white;
+    margin-right: 10px;
+}
+.general-info {
+    width: 100%;
+    float: left;
+}
+
+
+.date {
+    float: left;
+    font-style: italic;
+    font-weight: lighter;
+}
+.location {
+    float: right;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.projectImg {
+    height: 150px;
+    width:250px;
+    padding: 10px;
+    border: 1px solid #284259;
+}
+
+.map{
+  margin-bottom: 40px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    .contact-list > li {
+        list-style: none;
+        width: 100%;
+    }
+    .contact-list {
+        display: flex;
+    }
+    .contact-header {
+        width: 100%;
+        float: left;
+    }
+    .quote {
+        width: 80%;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
+    .contact-list > li {
+        list-style: none;
+        width: 33%;
+    }
+    .quote {
+        width: 60%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media screen and (min-width: 1200px) {
+    .contact-list > li {
+        list-style: none;
+        width: 20%;
+    }
+    .quote {
+        width: 40%;
+    }
+}

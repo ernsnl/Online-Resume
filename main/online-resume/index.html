@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Resume</title>
+    <!--Plugins-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--Custom Sytles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Scripts-->
+    <script src="js/helper.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <!-- Resume -->
+                    <div class="col-xs-12">
+                        <div id="resume-section" class="row ">
+                            <!-- Info Section -->
+                            <div class="col-xs-12 info-section">
+                                <div class="row">
+                                    <!-- Name/Role -->
+                                    <div class="col-xs-12 info-name-role"></div>
+                                    <!-- Contact -->
+                                    <div class="col-xs-12 info-contact"></div>
+                                    <!-- 3 Part Section -->
+                                    <div class="col-xs-12 info-three-part">
+                                        <div class="row">
+                                            <!-- Image Section -->
+                                            <div class="col-xs-12 col-sm-4 col-md-3 info-image"> </div>
+                                            <div class="col-xs-12 col-sm-8 col-md-9 info-skill-quote">
+                                                <div class="row">
+                                                    <!-- Quote Section -->
+                                                    <div class="col-xs-12 info-quote"></div>
+                                                    <!-- Skill Section -->
+                                                    <div class="col-xs-12 info-skill"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- Work Section -->
+                            <div class="col-xs-12 work-section">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Work Experience</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="col-xs-12 work-duplicate duplicate">
+                                        <h4 class="work-header"></h4>
+                                        <p class="work-info general-info"><span class="date"></span><span class="location"></span></p>
+                                        <p class="work-summary"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Projects Section -->
+                            <div class="col-xs-12 project-section">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Projects</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 project-duplicate duplicate">
+                                        <h4 class="project-header"><a href='#' class='project-url' target='_blank'></a></h4>
+                                        <p class="project-info general-info"><span class="date"></span></p>
+                                        <p class="project-summary"></p>
+                                        <div class="project-images"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Section-->
+                            <div class="col-xs-12 education-section">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Education</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="col-xs-12 education-duplicate duplicate">
+                                        <h4 class="education-header"><a class="school-url" href="#" target="_blank"></a></h4>
+                                        <p class="education-info general-info"><span class="date"></span><span class="location"></span></p>
+                                        <p class="education-major"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Online Course Section -->
+                            <div class="col-xs-12 online-section">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Online Courses</h3>
+                                        <hr/>
+                                    </div>
+                                    <div class="col-xs-12 online-duplicate duplicate">
+                                        <h4 class="online-header"><a class="online-url" href="#" target="_blank"></a></h4>
+                                        <p class="online-info general-info"><span class="date"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Map Section -->
+                            <div class="col-xs-12 map">
+                                <h3>Countries I Visited</h3>
+                                <hr/>
+                                <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+                                <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+                                <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+                                <div id="mapdiv" style="width: 100%; height: 450px;"></div>
+                                <div style="width: 100%; font-size: 70%; padding: 5px 0; text-align: center; background-color: #021526; margin-top: 1px; color: #B4B4B7;"><a href="https://www.amcharts.com/visited_countries/" style="color: #B4B4B7;">Create your own visited countries map</a> or check out the <a href="https://www.amcharts.com/" style="color: #B4B4B7;">JavaScript Charts</a>.</div>
+                                <script type="text/javascript">
+                                    var map = AmCharts.makeChart("mapdiv", {
+                                        type: "map",
+                                        theme: "dark",
+                                        projection: "mercator",
+                                        panEventsEnabled: true,
+                                        backgroundColor: "#021526",
+                                        backgroundAlpha: 1,
+                                        zoomControl: {
+                                            zoomControlEnabled: true
+                                        },
+                                        dataProvider: {
+                                            map: "worldHigh",
+                                            getAreasFromMap: true,
+                                            areas: [{
+                                                "id": "CH",
+                                                "showAsSelected": true
+                                            }, {
+                                                "id": "CZ",
+                                                "showAsSelected": true
+                                            }, {
+                                                "id": "DE",
+                                                "showAsSelected": true
+                                            }, {
+                                                "id": "TR",
+                                                "showAsSelected": true
+                                            }, {
+                                                "id": "US",
+                                                "showAsSelected": true
+                                            }]
+                                        },
+                                        areasSettings: {
+                                            autoZoom: true,
+                                            color: "#B4B4B7",
+                                            colorSolid: "#0C2840",
+                                            selectedColor: "#0C2840",
+                                            outlineColor: "#041926",
+                                            rollOverColor: "#9EC2F7",
+                                            rollOverOutlineColor: "#000000"
+                                        }
+                                    });
+                                </script>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        buildResume("resume-section", bio, education, work, projects);
+    </script>
+</body>
+
+
+</html>
