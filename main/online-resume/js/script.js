@@ -50,7 +50,7 @@ var education = {
         name: "Istanbul Technical University",
         location: "Istanbul",
         degree: "Bachelor's Degree",
-        major: ["Computer Engineer"],
+        majors: ["Computer Engineer"],
         dates: "2016",
         url: "http://www.bb.itu.edu.tr/"
     }],
