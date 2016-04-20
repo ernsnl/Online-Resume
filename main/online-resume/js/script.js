@@ -39,6 +39,12 @@ var bio = {
             appendedSection.find('.skill-list').append(htmlSkillGeneric.replace('%data%', this.skills[i]));
         }
         appendedSection.find('.info-image').append(htmlProfileImg.replace('%data%', this.biopic));
+
+        // Let's Connect
+        appendedSection = $("#" + documentID).find('.connectList').append(htmlContact);
+        $.each(this.contacts, function(index_c, value_c) {
+            appendedSection.find('.contact-list').append(htmlContactGeneric.replace('%type%', index_c).replace('%value%', value_c));
+        });
     }
 };
 // Education HTML
