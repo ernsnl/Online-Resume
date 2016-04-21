@@ -156,6 +156,8 @@ var projects = {
         });
     }
 };
+// Cities I visited
+var cities = ["San Antonio, TX", "Miami,FL", "Orlando,FL", "Chicago, IL", "Annapolis, MD", "Istanbul, Turkey", "Washington, DC", "Prague, Czech Republic", "Nurnberg, Germany", "Bern, Switzerland"];
 // Main Build Resume Funtion
 function buildResume(documentID, bio, education, work, projects) {
     if (!jQuery.isEmptyObject(bio)) {
