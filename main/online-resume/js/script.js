@@ -12,11 +12,11 @@ var bio = {
     name: "Sinasi Eren Senel",
     role: "Junior Software Developer/Student",
     contacts: {
-        Mobile: "+905324862675",
-        Email: "ernsnl@gmail.com",
-        Github: "ernsnl",
-        Twitter: "ernsnl",
-        Location: "Annapolis, MD",
+        mobile: "+905324862675",
+        email: "ernsnl@gmail.com",
+        github: "ernsnl",
+        twitter: "ernsnl",
+        location: "Annapolis, MD",
     },
     welcomeMessage: "Live as if you were to die tommorrow. Learn as if you were to live forever.",
     welcomeMessageWho: 'Mahatma Gandhi',
@@ -27,7 +27,7 @@ var bio = {
         appendedSection.find('.info-name-role').append(htmlNameRole.replace('%data_n%', this.name).replace('%data_r%', this.name));
         appendedSection.find('.info-contact').append(htmlContact);
         $.each(this.contacts, function(index_c, value_c) {
-            appendedSection.find('.info-contact .contact-list').append(htmlContactGeneric.replace('%type%', index_c).replace('%value%', value_c));
+            appendedSection.find('.info-contact .contact-list').append(htmlContactGeneric.replace('%type%', index_c.toString()[0].toUpperCase() + index_c.toString().slice(1)).replace('%value%', value_c));
         });
         appendedSection.find('.info-quote').append(htmlQuoteGeneric.replace('%quote%', this.welcomeMessage).replace('%who%', this.welcomeMessageWho));
         appendedSection.find('.info-skill').append(htmlSkill);

@@ -2,15 +2,13 @@ var map;
 
 function locationFinder() {
     var locations = [];
-    /*
-    locations.push(bio.contacts.Location);
+    locations.push(bio.contacts.location);
     education.schools.forEach(function(school) {
         locations.push(school.location);
     });
     work.jobs.forEach(function(job) {
         locations.push(job.location);
     });
-    */
     locations = locations.concat(cities);
     return locations;
 }
