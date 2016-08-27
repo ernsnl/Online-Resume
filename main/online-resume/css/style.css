@@ -39,7 +39,8 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
 }
 .skill-list {
-    display: flex;
+    width:100%;
+    float:left;
 }
 .skill-list > li {
     list-style: none;
@@ -48,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #284259;
     color: white;
     margin-right: 10px;
+    margin-top:10px;
 }
 .general-info {
     width: 100%;

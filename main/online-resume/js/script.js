@@ -15,8 +15,8 @@ var bio = {
         mobile: "+905324862675",
         email: "ernsnl@gmail.com",
         github: "ernsnl",
-        twitter: "ernsnl",
-        location: "Annapolis, MD",
+        twitter: "ernsnl"
+        //location: "Annapolis, MD",
     },
     welcomeMessage: "Live as if you were to die tommorrow. Learn as if you were to live forever.",
     welcomeMessageWho: 'Mahatma Gandhi',
@@ -132,13 +132,15 @@ var projects = {
         description: "Using Entity Framework and MVC, Personal Website was created.",
         url: 'http://ernsnl.com',
         images: ["img/personalWebsite.png"]
-    }, {
+    }
+    , {
         title: "Fan Project",
         dates: "2016",
         description: "Fan Project that focuses on Youtube API and Twitter API",
         url: 'http://jacksfilms.ernsnl.com',
         images: ["img/GetPaid.png"]
-    }],
+    }
+   ],
     display: function(documentID) {
         var appendedArea = $("#" + documentID).find('.project-duplicate').parent();
         var duplicate = $("#" + documentID).find('.project-duplicate');

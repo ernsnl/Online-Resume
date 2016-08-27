@@ -1,7 +1,7 @@
-# UdacityOnlineResume
+# Online Resume
 
-<h1>Udacity Online Resume</h1>
+This project was created for Udacity Front End NanoDegree Program.
 
-<p>All of the required files under the online-resume directory</p>
+This is online resume of Sinasi Eren Senel
 
-<p>Online at <a href='http://resume.ernsnl.com'>resume.ernsnl.com</a></p>
+Visit at [http://resume.ernsnl.com] (here)
